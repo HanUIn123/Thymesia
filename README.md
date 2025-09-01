@@ -28,8 +28,8 @@
 - **Idle 상태**에서 포자가 꿈틀거리게 하는 사인파 기반 진동
 - **피격 시 파편화**: 8방향 분할 + 고유 난수 방향 + 로드리게스 회전 적용
 - **돌 파편 연출**: 중앙에서 원형 퍼짐, 상승 및 중력 기반 낙하 구현
-- 
-  ![Geometry Shader 연출](./Shorts/Splatting.gif) ![Geometry Shader 연출](./Shorts/Splatting.gif)
+- ![Geometry Shader 연출](./Shorts/SporeMoving.gif)
+  ![Geometry Shader 연출](./Shorts/RockSplatting.gif) ![Geometry Shader 연출](./Shorts/Splatting.gif)
 
 ### 3. Item 시스템
 - `CItemMgr` 기반 **아이템 등록 / 드롭 / 획득 / 복원 관리**
@@ -41,6 +41,7 @@
 - **림라이트 셰이더 효과**로 상호작용 가능한 오브젝트 강조
 - **Lock-On 시스템**: 플레이어 ↔ 몬스터 간 라인 연결 + UV 흐름 연출
 - **상호작용 UI 버튼**: 월드좌표 → 화면 HUD 위치 변환 로직 구현
+- ![Geometry Shader 연출](./Shorts/LockLine.gif)
 
 ### 5. 메쉬 인스턴싱 + 컬링 최적화
 - `CGroundObject` 기반 인스턴싱 구조 설계
@@ -62,6 +63,7 @@
 - 베지어 곡선 기반 아이템 드롭 시스템
 - 림라이트 / Lock-On 상호작용 / UI 버튼 렌더링
 - 인스턴싱 구조 및 프러스텀 컬링 최적화
+- ![Geometry Shader 연출](./Shorts/culling.gif)
 
 ---
 
