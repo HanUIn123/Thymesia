@@ -12,7 +12,7 @@
 - 개발 도구: Visual Studio, GitHub, ImGui
 
 ## ■ 시연 영상
-- [▶️ Thymesia 연출 시연 영상 (Ver.1)](https://youtu.be/T3UJbHMiLYw)
+- [▶️ Thymesia 시연 영상](https://youtu.be/T3UJbHMiLYw)
 
 ---
 
