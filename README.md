@@ -65,4 +65,4 @@
 
 ## 🔗 관련 링크
 - [GitHub 메인 프로필 보기](https://github.com/HanUIn123)
-- [기술소개서 Notion 페이지](https://www.notion.so/My_Notion-226fe0424e1780f1a7d9f252a5c4dafa)
+- [기술소개서 PDF (구글 드라이브 미리보기)](https://drive.google.com/file/d/1A2B3C4D5E6F7G8H9I/view?usp=sharing)
