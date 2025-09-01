@@ -65,4 +65,4 @@
 
 ## 🔗 관련 링크
 - [GitHub 메인 프로필 보기](https://github.com/HanUIn123)
-- [기술소개서 PDF (구글 드라이브 미리보기)](https://drive.google.com/file/d/1A2B3C4D5E6F7G8H9I/view?usp=sharing)
+- [기술소개서 PDF (구글 드라이브 미리보기)](https://drive.google.com/file/d/1wup5oN58VjT7ZqLgSz5nnUzwBbbR_F-C/view?usp=drive_link)
