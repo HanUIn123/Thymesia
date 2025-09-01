@@ -28,7 +28,7 @@
 - **Idle 상태**에서 포자가 꿈틀거리게 하는 사인파 기반 진동
 - **피격 시 파편화**: 8방향 분할 + 고유 난수 방향 + 로드리게스 회전 적용
 - **돌 파편 연출**: 중앙에서 원형 퍼짐, 상승 및 중력 기반 낙하 구현
- ![Geometry Shader 연출](./Shorts/Splatting.gif)
+- ![Geometry Shader 연출](./Shorts/Splatting.gif)
 
 ### 3. Item 시스템
 - `CItemMgr` 기반 **아이템 등록 / 드롭 / 획득 / 복원 관리**
