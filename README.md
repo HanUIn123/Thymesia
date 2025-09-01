@@ -13,7 +13,6 @@
 
 ## 🎥 시연 영상
 - [▶️ Thymesia 연출 시연 영상 (Ver.1)](https://youtu.be/T3UJbHMiLYw)
-- [▶️ Thymesia 연출 시연 영상 (Ver.2)](https://youtu.be/q8If1wbsMpg)
 
 ---
 
