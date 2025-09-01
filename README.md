@@ -1,22 +1,22 @@
 # Thymesia 팀 프로젝트 (DirectX11 기반 3D 게임)
 
-## 🎮 개요
+## ■ 개요
 - Thymesia 스타일의 보스전 중심 액션 게임
 - 팀원 6명 참여, 그중 나는 **맵툴 / 네비게이션 / 연출 / 상호작용 / 인스턴싱 / 아이템 시스템**을 담당
 - **C++ / DirectX11 / HLSL / ImGui 기반 자체 엔진 프로젝트**
 
-## 🛠️ 개발 환경
+## ■ 개발 환경
 - 언어: C++
 - 그래픽 API: DirectX 11, HLSL
 - 플랫폼: Windows API
 - 개발 도구: Visual Studio, GitHub, ImGui
 
-## 🎥 시연 영상
+## ■ 시연 영상
 - [▶️ Thymesia 연출 시연 영상 (Ver.1)](https://youtu.be/T3UJbHMiLYw)
 
 ---
 
-## ✨ 주요 구현 기능
+## ■ 주요 구현 기능
 
 ### 1. Navigation 시스템 (맵툴 제작 및 이동 가능 영역 처리)
 - **픽셀 피킹** 기반 셀 생성 (툴에서 클릭한 위치를 월드 좌표로 변환)
@@ -48,13 +48,13 @@
 
 ---
 
-## 📁 폴더 구조
+## ■ 폴더 구조
 - `Client`: 게임 클라이언트 로직 (UI, 연출, 플레이어 등)
 - `Engine`: 공통 엔진 로직 (렌더링, 충돌, 셰이더, 오브젝트 관리 등)
 
 ---
 
-## 🧑‍💻 담당 파트 핵심 요약
+## ■ 담당 파트 핵심 요약
 - Navigation 셀 기반 맵툴 시스템
 - Geometry Shader 기반 연출: 파편화, 파동 애니메이션
 - 베지어 곡선 기반 아이템 드롭 시스템
@@ -63,6 +63,6 @@
 
 ---
 
-## 🔗 관련 링크
+## ■ 관련 링크
 - [GitHub 메인 프로필 보기](https://github.com/HanUIn123)
 - [기술소개서 PDF (구글 드라이브 미리보기)](https://drive.google.com/file/d/1wup5oN58VjT7ZqLgSz5nnUzwBbbR_F-C/view?usp=drive_link)
