@@ -11,7 +11,7 @@
 - 개발 도구: Visual Studio, Windows API, DirectX 11, HLSL, ImGui 라이브러리, Fmod 라이브러리
 
 ## ■ 시연 영상
-- [▶️ Thymesia 시연 영상](https://youtu.be/T3UJbHMiLYw)
+- [Thymesia 시연 영상](https://youtu.be/T3UJbHMiLYw)
 
 ## ■ 관련 링크
 - [GitHub 메인 프로필 보기](https://github.com/HanUIn123)
