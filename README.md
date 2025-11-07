@@ -1,3 +1,13 @@
+<!-- 기술 배지 구역 -->
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![DirectX 11](https://img.shields.io/badge/DirectX11-107C10?style=for-the-badge&logo=directx&logoColor=white)
+![HLSL](https://img.shields.io/badge/HLSL-1E90FF?style=for-the-badge&logoColor=white)
+![ImGui](https://img.shields.io/badge/ImGui-323330?style=for-the-badge&logo=imgui&logoColor=white)
+![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio%202022-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white)
+![Windows API](https://img.shields.io/badge/Windows%20API-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![FMOD](https://img.shields.io/badge/FMOD-000000?style=for-the-badge&logo=fmod&logoColor=white)
+
+
 # Thymesia 팀 프로젝트 (DirectX11 기반 3D 게임)
 
 ## ■ 개요
