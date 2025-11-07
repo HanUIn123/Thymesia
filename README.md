@@ -24,7 +24,6 @@
 - [Thymesia 시연 영상](https://youtu.be/T3UJbHMiLYw)
 
 ## ■ 관련 링크, 작업 내용 및 코드
-- [GitHub 메인 프로필 보기](https://github.com/HanUIn123)
 - [기술소개서 PDF](https://drive.google.com/file/d/17QnwDAURovJ5iqhc9QiynBnx4yU12BZQ/view?usp=drive_link)
 ---
 
