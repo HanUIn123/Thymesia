@@ -1,4 +1,4 @@
-<!-- 기술 배지 구역 -->
+<!-- 기술 배지 -->
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![DirectX 11](https://img.shields.io/badge/DirectX11-107C10?style=for-the-badge&logo=directx&logoColor=white)
 ![HLSL](https://img.shields.io/badge/HLSL-1E90FF?style=for-the-badge&logoColor=white)
