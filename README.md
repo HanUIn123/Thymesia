@@ -25,7 +25,7 @@
 
 ## ■ 관련 링크
 - [GitHub 메인 프로필 보기](https://github.com/HanUIn123)
-- [기술소개서 PDF](https://drive.google.com/file/d/1phu_wD1USYCIpEdR47daPdwD7mki5IAO/view?usp=drive_link)
+- [기술소개서 PDF](https://drive.google.com/file/d/17QnwDAURovJ5iqhc9QiynBnx4yU12BZQ/view?usp=drive_link)
 ---
 
 ## ■ 주요 구현 기능
