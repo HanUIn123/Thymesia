@@ -29,6 +29,7 @@ HRESULT CShader_Compute_Deferred::Initialize_Prototype(const _tchar* pShaderFile
 
 	ID3DBlob* pErrMsg = { nullptr };
 
+	// shader 만드는 것 마냥 쉐이더파일 찾아서 컴파일하는거고 
 	if (FAILED(D3DX11CompileEffectFromFile(pShaderFilePath, nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE, iHlslFlag, 0, m_pDevice, &m_pEffect, &pErrMsg)))
 		return E_FAIL;
 
