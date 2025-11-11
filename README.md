@@ -25,6 +25,32 @@
 
 ## ■ 관련 링크, 작업 내용 및 코드
 - [담당 파트 구현 내용 & 기술소개서 PDF](https://drive.google.com/file/d/17QnwDAURovJ5iqhc9QiynBnx4yU12BZQ/view?usp=drive_link)
+
+## ■ 담당 프로젝트 구조 
+📂 Client
+ └── 📂 Private
+      ├── DestructObject.cpp
+      ├── SpecificObject.cpp
+      │     ├── Chair.cpp
+      │     ├── ChairLamp.cpp
+      │     └── LadderObject.cpp
+      ├── EnvironmentObject.cpp
+      ├── GroundObject.cpp
+      ├── GameItem.cpp
+      ├── Button.cpp
+      ├── LockLine.cpp
+      └── GhostAisemy 관련 클래스 (예: GhostAisemy.cpp / GhostAisemy_AI.cpp)
+
+📂 Engine
+ └── 📂 Private
+      ├── Model.cpp
+      ├── Mesh.cpp
+      ├── Navigation.cpp
+      ├── EdgeNavi.cpp
+      └── Cell.cpp
+
+📂 ShaderFiles
+ └── Shader_VtxDestructMesh.hlsl
 ---
 
 ## ■ 주요 구현 기능
