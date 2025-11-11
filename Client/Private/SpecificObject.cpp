@@ -2,7 +2,6 @@
 #include "SpecificObject.h"
 #include "GameInstance.h"
 
-//_bool CSpecificObject::m_bChairOn = false;
 CSpecificObject::CSpecificObject(ID3D11Device* pDevice, ID3D11DeviceContext* pContext)
     :CGameObject{ pDevice, pContext }
 {

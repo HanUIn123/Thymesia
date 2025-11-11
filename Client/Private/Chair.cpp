@@ -88,7 +88,6 @@ void CChair::OnCollisionEnter(CGameObject* _pOther, PxContactPair _information)
 {
     m_iColliderCount++;
 
-    //if (!strcmp(m_szName, ("P_Archive_Chair01")))
     if (!strncmp(m_szName, "P_Archive_Chair01", 17))
     {
         _vector vChairPos = m_pTransformCom->Get_State(CTransform::STATE_POSITION);
@@ -134,8 +133,6 @@ void CChair::OnCollisionEnter(CGameObject* _pOther, PxContactPair _information)
 
 void CChair::OnCollision(CGameObject* _pOther, PxContactPair _information)
 {
-    // !strncmp(m_szName, "P_Archive_Chair01", 17)
-    //if (m_pGameInstance->isKeyEnter(DIK_E) && !strcmp(m_szName, ("P_Archive_Chair01")))
     if (m_pGameInstance->isKeyEnter(DIK_E) && !strncmp(m_szName, "P_Archive_Chair01", 17))
     {
         m_pGameInstance->UIGroup_Render_OnOff(LEVEL_STATIC, TEXT("Layer_Mouse"), true);

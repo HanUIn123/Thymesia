@@ -34,8 +34,6 @@ HRESULT CBarrierScreen::Initialize(void* pArg)
 
     m_iCurLevel = pDesc->iCurLevel;
 
-    //m_pTransformCom->Scaling(_float3(0.001f, 0.0055f, 0.0055f));
-
     m_pTransformCom->Set_State(CTransform::STATE_POSITION, XMLoadFloat4(&pDesc->_fPosition));
 
     m_pTransformCom->Rotation(XMVectorSet(0.0f, 1.0f, 0.0f, 0.0f), XMConvertToRadians(90.0f));

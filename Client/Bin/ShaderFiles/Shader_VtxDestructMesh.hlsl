@@ -144,14 +144,13 @@ void GS_MAIN_DESTRUCT(triangle GS_IN_DESTRUCT input[3], inout TriangleStream<GS_
     float fVerticesWorldPosY = input[0].vWorldPos.y;
 
     // 모델 정점의 월드 좌표에서, 모델의 중심 좌표 뺀 값.( 정점이 모델 중심에서 얼마나 떨어져잇는가 )
-    float fVerticesPosX = fVerticesWorldPosX - g_ModelPosition.x; // x는 모델 피킹 배치된 그 x중심 
-    float fVerticesPosY = fVerticesWorldPosY - g_fModelHeightCenterY; // y는 블렌더에서 + 오프셋한 값 해준걸로
+    float fVerticesPosX = fVerticesWorldPosX - g_ModelPosition.x;       // x는 모델 피킹 배치된 그 x중심 
+    float fVerticesPosY = fVerticesWorldPosY - g_fModelHeightCenterY;   // y는 블렌더에서 + 오프셋한 값 해준걸로
 
     float fHorizonQuaterValue = 0.25f;
 
     int iHorizontalPart = 0;
     
-    //if (fVerticesPosX < -fHorizonQuaterValue * 2.0f)            // -0.5
     if (fVerticesPosX < -fHorizonQuaterValue * 1.5f)            // -0.375
         iHorizontalPart = 0;
     else if (fVerticesPosX < -fHorizonQuaterValue * 0.5f)       // -0.125
@@ -195,17 +194,13 @@ void GS_MAIN_DESTRUCT(triangle GS_IN_DESTRUCT input[3], inout TriangleStream<GS_
     }
     vMoveDir = normalize(vMoveDir);
 
-    //float3 move = moveDir * (g_fExplosionPower * 0.8f);
     // 모델의 정점들의 이동량
-    //float3 vMoveValue = vMoveDir * (g_fExplosionPower * 0.8f) * 1.5f;
     float3 vMoveValue = vMoveDir * (g_fExplosionPower * 0.8f) * g_ExplosionPowerOffset;
 
     float fFallingTime = g_fFallingTime;
     float fGravityPower = -9.8f;
     
     // 초기 튀어오르는(점프느낌) 속도 
-    //float fInitialPopVelocity = 0.5f;
-    
     float fInitialPopVelocity = g_InitialJumpPower;
     //  V0 * t  + (0.5) * g * t^2
     float fFallingValue = (fInitialPopVelocity * fFallingTime) + (0.4f) * (fGravityPower * fFallingTime * fFallingTime);
@@ -217,10 +212,9 @@ void GS_MAIN_DESTRUCT(triangle GS_IN_DESTRUCT input[3], inout TriangleStream<GS_
     float fVerticalOffset = (iVerticalPart == 0) ? -0.25f : 0.25f;
     
     // 파편의 중심(오프셋 적용)
-    //float3 vPartCenter = float3(g_ModelPosition.x + fHorizonOffset, g_ModelPosition.y + fVerticalOffset, g_ModelPosition.z);
     float3 vPartCenter = float3(g_ModelPosition.x + fHorizonOffset, g_fModelHeightCenterY + fVerticalOffset, g_ModelPosition.z);
 
-    // 회전 축( 각각 따로 줄꺼임 ) 
+    // 회전 축( 각각 따로 ) 
     float3 vRotationAxis = float3(1, 0, 0);
     switch (iPartIndex)
     {
@@ -253,7 +247,7 @@ void GS_MAIN_DESTRUCT(triangle GS_IN_DESTRUCT input[3], inout TriangleStream<GS_
     float fRotationSpeed = 3.0f;
     float fAngle = g_fFallingTime * fRotationSpeed;
 
-    // 씹드리게스 회전
+    // 로드리게스 회전
     // https://mathworld.wolfram.com/RodriguesRotationFormula.html
     float fCosAngle = cos(fAngle);
     float fSinAngle = sin(fAngle);
@@ -289,9 +283,6 @@ void GS_MAIN_DESTRUCT(triangle GS_IN_DESTRUCT input[3], inout TriangleStream<GS_
         Out.vBinormal = input[i].vBinormal;
         Out.vProjPos = input[i].vProjPos;
 
-        // [0] 으로 해야 모델 이루는 삼각형의 세 점 중 하나라도 일단 먼저 땅에 닿으면
-        // 땅이라는 것도 모델의 피킹 배치된 y기준 높이 말하는거임 
-        // [i]로 그냥 하니깐 이제 세 정점이 다 동일한 y기준 그거하니까 찌부되더라고.ㅇㅈ?ㅇㅇㅆㅇㅈ
         float fVerticesYPos = input[0].vWorldPos.y + vMoveValue.y;
         float3 vResultMoveValue = vMoveValue;
 
@@ -367,14 +358,11 @@ void GS_MAIN_PARTICLE(triangle GS_IN_DESTRUCT input[3], inout TriangleStream<GS_
         float3 vRotatedPos = mul(vPos, matRotation);
         float3 vResultPos = vVerticesCenterPos + vRotatedPos;
 
-        // 이동한 값(이동량)
         float3 vResultMoveValue = vMoveValue;
 
-        // 갱신된 해당 모델의 Y 점.
         float fNewPosY = input[i].vWorldPos.y + vMoveValue.y;
         if (fNewPosY <= g_ModelPosition.y)
         {
-            // 모델 Y점(피킹 배치된 Y의 그 점에 닿으면 이제 스탑잇 하고, 멈춰!
             float fCurrentVerticesY = input[i].vWorldPos.y;
             vResultMoveValue.y = g_ModelPosition.y - fCurrentVerticesY;
         }
@@ -409,8 +397,6 @@ void GS_MAIN_SPORE(triangle GS_IN_DESTRUCT input[3], inout TriangleStream<GS_OUT
         float3 vWorldPos = input[i].vWorldPos.xyz;
         float3 vLocalOffset = vWorldPos - g_ModelPosition.xyz;
         
-        // 대각선(정점의 x 와 z를 더해서)
-        // fFarOffsetValue 얘를 건들수록 파동의 진폭이 좁아져서 존나 자글자글해짐 
         float fFarOffsetValue = (vLocalOffset.x + vLocalOffset.z) * 2.0f;
         float fWiggleValue = sin(fWiggleTime * 10.0f + fFarOffsetValue) * 0.02f;
         

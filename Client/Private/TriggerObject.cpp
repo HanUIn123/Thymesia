@@ -57,10 +57,6 @@ void CTriggerObject::Update(_float _fTimeDelta)
 
 void CTriggerObject::Late_Update(_float _fTimeDelta)
 {
-   /* if (m_pGameInstance->Get_DIKeyState(DIK_1) & 0x80)
-    {
-        m_pGameInstance->Activate_Fade(TRIGGER_TYPE::TT_FADE_OUT, 0.5f);
-    }*/
 }
 
 HRESULT CTriggerObject::Render()
@@ -75,15 +71,7 @@ HRESULT CTriggerObject::Ready_Components()
 
 void CTriggerObject::OnCollisionEnter(CGameObject* _pOther, PxContactPair _information)
 {
-    //if (!m_bFade)
-    //{
-    //    m_pGameInstance->Activate_Fade(TRIGGER_TYPE::TT_FADE_OUT, 2.0f);
-    //    m_bFade = true;
-    //}
-
     m_pGameInstance->Set_bInWater();
-
-    //m_pGameInstance->Delete_GameObject_From_Layer(LEVEL_SEAOFTREES, TEXT("Layer_Normal_Map"));
 }
 
 void CTriggerObject::OnCollision(CGameObject* _pOther, PxContactPair _information)

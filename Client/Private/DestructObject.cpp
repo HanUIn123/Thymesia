@@ -146,7 +146,6 @@ void CDestructObject::Update(_float fTimeDelta)
 void CDestructObject::Late_Update(_float fTimeDelta)
 {
     m_pGameInstance->Add_RenderGroup(CRenderer::RG_NONBLEND, this);
-    //m_pGameInstance->Add_RenderGroup(CRenderer::RG_OCCULUSION, this);
 }
 
 HRESULT CDestructObject::Render()
@@ -206,29 +205,21 @@ HRESULT CDestructObject::Bind_ShaderResources()
     if (FAILED(m_pShaderCom->Bind_Matrix("g_ProjMatrix", &m_pGameInstance->Get_Transform_Float4x4(CPipeLine::D3DTS_PROJ))))
         return E_FAIL;
 
-    // =========================== 지메쉐로 드가자아잇 ===========================
-
-    // 얼마나 세게
     if (FAILED(m_pShaderCom->Bind_RawValue("g_fExplosionPower", &m_fExplosionPower, sizeof(_float))))
         return E_FAIL;
 
-    // 얼마나 오래 떨어질꺼?
     if (FAILED(m_pShaderCom->Bind_RawValue("g_fFallingTime", &m_fFallingTime, sizeof(_float))))
         return E_FAIL;
 
-    // 모델의 위치점 (처음 피킹 배치 될 때 그 x y z 를 지메쉐에서 나눠서 쓸 꺼임
     if (FAILED(m_pShaderCom->Bind_RawValue("g_ModelPosition", &m_fModelPos, sizeof(_float4))))
         return E_FAIL;
 
-    // 모델의 y 중심점 (등분 할 때 쓸꺼임) 
     if (FAILED(m_pShaderCom->Bind_RawValue("g_fModelHeightCenterY", &m_fModelHeightCenterY, sizeof(_float))))
         return E_FAIL;
 
-    // 디졸브 맥일꺼임 ㅋㅋ
     if (FAILED(m_pTextureCom->Bind_ShaderResource(m_pShaderCom, "g_DissolveTexture", 0)))
         return E_FAIL;
 
-    // 디졸브 변화량 값임 ㅋㅋ
     if (FAILED(m_pShaderCom->Bind_RawValue("g_DissolveAmount", &m_fDissolveAmount, sizeof(_float))))
         return E_FAIL;
 

@@ -38,7 +38,6 @@ HRESULT CGhostAisemy::Initialize(void* pArg)
         return E_FAIL;
 
     m_iState = STATE_GOSEMY_APPROACH;
-    //m_iState = STATE_GOSEMY_LIGHT_OFF;
 
     m_pTransformCom->Scaling(_float3{ 0.002f, 0.002f, 0.002f });
 
