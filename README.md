@@ -28,25 +28,30 @@
 
 ## ■ 담당 프로젝트 구조
 
-📂 **Client** └── 📂 **Private** 　　├── [DestructObject.cpp](./Client/Private/DestructObject.cpp)  
-　　├── [SpecificObject.cpp](./Client/Private/SpecificObject.cpp)  
-　　│　　├── [Chair.cpp](./Client/Private/Chair.cpp)  
-　　│　　├── [ChairLamp.cpp](./Client/Private/ChairLamp.cpp)  
-　　│　　└── [LadderObject.cpp](./Client/Private/LadderObject.cpp)  
-　　├── [EnvironmentObject.cpp](./Client/Private/EnvironmentObject.cpp)  
-　　├── [GroundObject.cpp](./Client/Private/GroundObject.cpp)  
-　　├── [GameItem.cpp](./Client/Private/GameItem.cpp)  
-　　├── [Button.cpp](./Client/Private/Button.cpp)  
-　　├── [LockLine.cpp](./Client/Private/LockLine.cpp)  
-　　└── GhostAisemy 관련 클래스 ([GhostAisemy.cpp](./Client/Private/GhostAisemy.cpp) / [GhostAisemy_AI.cpp](./Client/Private/GhostAisemy_AI.cpp))
+📂 **Client**
+&nbsp;&nbsp;└── 📂 **Private**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [DestructObject.cpp](./Client/Private/DestructObject.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [SpecificObject.cpp](./Client/Private/SpecificObject.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── [Chair.cpp](./Client/Private/Chair.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── [ChairLamp.cpp](./Client/Private/ChairLamp.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;└── [LadderObject.cpp](./Client/Private/LadderObject.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [EnvironmentObject.cpp](./Client/Private/EnvironmentObject.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [GroundObject.cpp](./Client/Private/GroundObject.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [GameItem.cpp](./Client/Private/GameItem.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [Button.cpp](./Client/Private/Button.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [LockLine.cpp](./Client/Private/LockLine.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── GhostAisemy 관련 ([GhostAisemy.cpp](./Client/Private/GhostAisemy.cpp) / [GhostAisemy_AI.cpp](./Client/Private/GhostAisemy_AI.cpp))
 
-📂 **Engine** └── 📂 **Private** 　　├── [Model.cpp](./Engine/Private/Model.cpp)  
-　　├── [Mesh.cpp](./Engine/Private/Mesh.cpp)  
-　　├── [Navigation.cpp](./Engine/Private/Navigation.cpp)  
-　　├── [EdgeNavi.cpp](./Engine/Private/EdgeNavi.cpp)  
-　　└── [Cell.cpp](./Engine/Private/Cell.cpp)
+📂 **Engine**
+&nbsp;&nbsp;└── 📂 **Private**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [Model.cpp](./Engine/Private/Model.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [Mesh.cpp](./Engine/Private/Mesh.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [Navigation.cpp](./Engine/Private/Navigation.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── [EdgeNavi.cpp](./Engine/Private/EdgeNavi.cpp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── [Cell.cpp](./Engine/Private/Cell.cpp)
 
-📂 **ShaderFiles** └── [Shader_VtxDestructMesh.hlsl](./ShaderFiles/Shader_VtxDestructMesh.hlsl)
+📂 **ShaderFiles**
+&nbsp;&nbsp;└── [Shader_VtxDestructMesh.hlsl](./ShaderFiles/Shader_VtxDestructMesh.hlsl)
 
 ---
 
