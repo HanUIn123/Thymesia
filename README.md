@@ -24,7 +24,7 @@
 - [Thymesia 시연 영상](https://youtu.be/T3UJbHMiLYw)
 
 ## ■ 관련 링크, 작업 내용 및 코드
-- [담당 파트 구현 내용 & 기술소개서 PDF](https://drive.google.com/file/d/17QnwDAURovJ5iqhc9QiynBnx4yU12BZQ/view?usp=drive_link)
+- [담당 파트 구현 내용 & 기술소개서 PDF](https://drive.google.com/file/d/1fXVbMRgaGs1kpYE0ysd9WcQo2Ls_cZbW/view?usp=drive_link)
 
 ## ■ 담당 프로젝트 구조
 
