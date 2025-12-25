@@ -27,30 +27,26 @@
 - [담당 파트 구현 내용 & 기술소개서 PDF](https://drive.google.com/file/d/17QnwDAURovJ5iqhc9QiynBnx4yU12BZQ/view?usp=drive_link)
 
 ## ■ 담당 프로젝트 구조
-📂 Client  
-└── 📂 Private  
-　　├── DestructObject.cpp  
-　　├── SpecificObject.cpp  
-　　│　　├── Chair.cpp  
-　　│　　├── ChairLamp.cpp  
-　　│　　└── LadderObject.cpp  
-　　├── EnvironmentObject.cpp  
-　　├── GroundObject.cpp  
-　　├── GameItem.cpp  
-　　├── Button.cpp  
-　　├── LockLine.cpp  
-　　└── GhostAisemy 관련 클래스 (예: GhostAisemy.cpp / GhostAisemy_AI.cpp)
 
-📂 Engine  
-└── 📂 Private  
-　　├── Model.cpp  
-　　├── Mesh.cpp  
-　　├── Navigation.cpp  
-　　├── EdgeNavi.cpp  
-　　└── Cell.cpp
+📂 **Client** └── 📂 **Private** 　　├── [DestructObject.cpp](./Client/Private/DestructObject.cpp)  
+　　├── [SpecificObject.cpp](./Client/Private/SpecificObject.cpp)  
+　　│　　├── [Chair.cpp](./Client/Private/Chair.cpp)  
+　　│　　├── [ChairLamp.cpp](./Client/Private/ChairLamp.cpp)  
+　　│　　└── [LadderObject.cpp](./Client/Private/LadderObject.cpp)  
+　　├── [EnvironmentObject.cpp](./Client/Private/EnvironmentObject.cpp)  
+　　├── [GroundObject.cpp](./Client/Private/GroundObject.cpp)  
+　　├── [GameItem.cpp](./Client/Private/GameItem.cpp)  
+　　├── [Button.cpp](./Client/Private/Button.cpp)  
+　　├── [LockLine.cpp](./Client/Private/LockLine.cpp)  
+　　└── GhostAisemy 관련 클래스 ([GhostAisemy.cpp](./Client/Private/GhostAisemy.cpp) / [GhostAisemy_AI.cpp](./Client/Private/GhostAisemy_AI.cpp))
 
-📂 ShaderFiles  
-└── Shader_VtxDestructMesh.hlsl
+📂 **Engine** └── 📂 **Private** 　　├── [Model.cpp](./Engine/Private/Model.cpp)  
+　　├── [Mesh.cpp](./Engine/Private/Mesh.cpp)  
+　　├── [Navigation.cpp](./Engine/Private/Navigation.cpp)  
+　　├── [EdgeNavi.cpp](./Engine/Private/EdgeNavi.cpp)  
+　　└── [Cell.cpp](./Engine/Private/Cell.cpp)
+
+📂 **ShaderFiles** └── [Shader_VtxDestructMesh.hlsl](./ShaderFiles/Shader_VtxDestructMesh.hlsl)
 
 ---
 
